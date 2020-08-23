@@ -42,9 +42,12 @@ __Estructura básica__
     return 0;
   }
 ```
+
+Al igual resaltemos que el tipo de archivo que se guarda nuestro código fuente es bajo la extensión ".cpp"
+
 __¿Qué sucede sino inserto la línea using namespace?__
 
-Ahora bien para el caso donde no se añade esta línea de código cual es la consecuencia, pues bien en C++ al no usar ese espacio de memoria tendremos que escribir código de salida a pantalla o de entrada de teclado a través de una escritura más larga pero que no altera el comportamiento, en el apartado de salida a pantalla de un mensaje y de entrada de teclado se te mostrara en como se hace en ambos casos
+Ahora bien para el caso donde no se añade esta línea de código cual es la consecuencia, pues bien en C++ al no usar ese espacio de memoria tendremos que escribir código de salida a pantalla o de entrada de teclado a través de una escritura más larga pero que no altera el comportamiento, en el apartado de salida a pantalla de un mensaje y de entrada de teclado se te mostrara en como se hace en ambos casos.
 
 ### Hola mundo ###
 Como popularmente lo trabajan todos los programadores a la hora de aprender un lenguaje de programación siempre escriben un "Hola mundo!", por ello a continuación se te muestra el ejemplo de como se escribe y la diferencia con respecto a usar el namespace.
@@ -92,6 +95,7 @@ Las secuencias de escape funcionan para definir caracteres que no son imprimible
 |    \\f    | Salto de página |
 |    \\0    | Fin de cadena (Este es un carácter no imprimible pero funciona mucho para saber el ultimo carácter que ha sido escrito) |
 
+Resaltemos que en el código de Hola mundo debemos saber que la instrucción endl es equivalente a "\\n"
 
 ## Tipos de datos básicos ##
 Los tipos de datos son especificaciones en las cuales se almacenaran desde números enteros, hasta números reales, como en otros casos valores lógicos como verdadero y falso, por ello a continuación te listo los tipos de datos así como los valores que puede aceptar.
