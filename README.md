@@ -79,6 +79,20 @@ __Caso sin namespace__
 
 Ahora si bien la diferencia que vemos aquí no es muy grande a la hora de escribir programas muy grandes el no escribir este espacio de memoria de entrada y salida puede resultar contraproducente para nuestros fines de escribir o desarrollar aplicaciones de forma rápida.
 
+
+## Secuencias de Escape ##
+Las secuencias de escape funcionan para definir caracteres que no son imprimibles, de los cuales funcionan para trabajar en nuevas lineas de texto, en retroceso, tabuladores y otros más, los más clásicos que utilizaremos son los siguientes:
+| Secuencia | Significado |
+| --------- | ----------- |
+|    \\n    | Salto de línea, es decir, nueva línea |
+|    \\t    | Tabulador equivalente a 5 espacios |
+|    \\b    | Retroceder un carácter |
+|    \\v    | Tabulador vertical |
+|    \\\\   | Impresión del carácter "\\" |
+|    \\f    | Salto de página |
+|    \\0    | Fin de cadena (Este es un carácter no imprimible pero funciona mucho para saber el ultimo carácter que ha sido escrito) |
+
+
 ## Tipos de datos básicos ##
 Los tipos de datos son especificaciones en las cuales se almacenaran desde números enteros, hasta números reales, como en otros casos valores lógicos como verdadero y falso, por ello a continuación te listo los tipos de datos así como los valores que puede aceptar.
 
