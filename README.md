@@ -117,3 +117,66 @@ Ejemplos de una escritura de variable pueden ser la siguientes:
   int -1221212a;
   int -val;
 ```
+## Entrada de texto ##
+En C++ hay un y mil maneras de hacer un lectura de datos desde teclado y desde un archivo, por lo que si se desea hacer uso de namespace std lo cual un ejemplo de lectura de cada uno de los datos clásicos es la siguiente forma:
+__Forma 1__
+```cpp
+  #include <iostream>
+  using namespace std;
+
+  int main(void){
+    int a;
+    float b;
+    double c;
+    char d;
+    string e;
+    cout<<"Hola, por favor ingresa un numero entero: ";
+    cin>>a;
+    cout<<"Ahora por favor ingresa un numero real: ";
+    cin>>b;
+    cout<<"Ahora por favor ingresa otro numero real: ";
+    cin>>c;
+    cout<<"Ingresa un caracter: ";
+    cin>>d;
+    cout<<"Ingresa por favor tu nombre: ";
+    cin>>e;
+    cout<<"Los datos ingresados son los siguientes:\n"<<
+    "int\t"<<a<<"\nfloat\t"<<b<<"\ndouble\t"<<c<<"\nchar\t"<<d<<
+    "\nString\tHola "<<e<<"\n";
+    return 0;
+  }
+```
+Esta forma en la cual se puede leer distintos tipos de datos y distintas variables por lo que en el caso del "string e" si el nombre que se solicita en la lectura contiene espacios en este caso no se podrá mostrar más que la primer linea de datos, por lo que en este sentido podemos solucionarlo modificando el código con lo siguiente.
+
+__Forma 2__
+```cpp
+  #include <iostream>
+  using namespace std;
+
+  int main(void){
+    int a;
+    float b;
+    double c;
+    char d;
+    string e;
+    cout<<"Hola, por favor ingresa un numero entero: ";
+    cin>>a;
+    cout<<"Ahora por favor ingresa un numero real: ";
+    cin>>b;
+    cout<<"Ahora por favor ingresa otro numero real: ";
+    cin>>c;
+    cout<<"Ingresa un caracter: ";
+    cin>>d;
+    getchar();
+    cout<<"Ingresa por favor tu nombre: ";
+    getline(cin,e);
+    cout<<"Los datos ingresados son los siguientes:\n"<<
+    "int\t"<<a<<"\nfloat\t"<<b<<"\ndouble\t"<<c<<"\nchar\t"<<d<<
+    "\nString\tHola "<<e<<"\n";
+    return 0;
+  }
+```
+
+En este caso antes del mensaje "Ingresa por favor tu nombre: " se añadió la función getchar() la cual permite omitir el ultimo newline (endl o '\\n') el cual si esta linea es omitida, lo peor que puede pasar es que en la ejecución del programa la línea del getline() sea omitida y el programa termine.
+
+Una recomendación a la hora de programar es saber si en la lectura de datos de tipo serie o cadena de caracteres se realizara con otra función distinta a "cin" y que va en medio de otras peticiones de otro tipo de variables, es decir una lectura de valores enteros, flotantes, o dobles, es recomendable que vaya acompañado de getchar() para que no existan problemas en los cuales una aplicación o programa pueda fallar.
