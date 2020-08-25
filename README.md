@@ -225,6 +225,6 @@ Como muchas veces o en ocasiones nos haremos cargo de simular algunos circuitos 
 | Símbolo | Operación |
 | ------- | --------- |
 |    &    | AND de dos datos |
-|    |    | OR de dos datos |
+|    \|    | OR de dos datos |
 |    ^    | XOR de dos datos |
 |    ~    | NOT de un dato |
