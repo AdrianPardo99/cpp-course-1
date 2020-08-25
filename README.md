@@ -198,3 +198,33 @@ __Forma 2__
 En este caso antes del mensaje "Ingresa por favor tu nombre: " se añadió la función getchar() la cual permite omitir el ultimo newline (endl o '\\n') el cual si esta linea es omitida, lo peor que puede pasar es que en la ejecución del programa la línea del getline() sea omitida y el programa termine.
 
 Una recomendación a la hora de programar es saber si en la lectura de datos de tipo serie o cadena de caracteres se realizara con otra función distinta a "cin" y que va en medio de otras peticiones de otro tipo de variables, es decir una lectura de valores enteros, flotantes, o dobles, es recomendable que vaya acompañado de getchar() para que no existan problemas en los cuales una aplicación o programa pueda fallar.
+
+# Operaciones aritméticas y lógicas #
+Muchas veces nos vamos a encontrar que en nuestra resolución de problemas con que debemos realizar operaciones matemáticas y lógicas los cuales a continuación se muestran los símbolos y como operan:
+
+## Operación Aritmética ##
+| Simbolo | Operación |
+| ------- | --------- |
+|    +    | Suma de dos datos |
+|    -    | Resta de dos datos |
+|    *    | Multiplicación de dos datos |
+|    /    | División de dos datos en caso de que alguno de los datos o ambos datos sean enteros la división es entera |
+|    %    | Modulo de dos datos, este devuelve el residuo de una división entera |
+
+## Operación Lógica ##
+Como muchas veces o en ocasiones nos haremos cargo de simular algunos circuitos lógicos o tablas de verdad podremos ahorrarnos esa tarea operando directamente que en muchas ocasiones estas operaciones las podemos hacer para ejecutar ciclos condicionales, u operaciones a nivel de bit.
+
+### Para condicionales ###
+| Simbolo | Operación |
+| ------- | --------- |
+|   &&    | AND condicional |
+|   \|\|  | OR condicinal |
+|   !     | NOT condicional |
+
+### Para operaciones nivel de bit ###
+| Simbolo | Operación |
+| ------- | --------- |
+|    &    | AND de dos datos |
+|    |    | OR de dos datos |
+|    ^    | XOR de dos datos |
+|    ~    | NOT de un dato |
