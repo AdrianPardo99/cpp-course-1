@@ -203,7 +203,7 @@ Una recomendación a la hora de programar es saber si en la lectura de datos de 
 Muchas veces nos vamos a encontrar que en nuestra resolución de problemas con que debemos realizar operaciones matemáticas y lógicas los cuales a continuación se muestran los símbolos y como operan:
 
 ## Operación Aritmética ##
-| Simbolo | Operación |
+| Símbolo | Operación |
 | ------- | --------- |
 |    +    | Suma de dos datos |
 |    -    | Resta de dos datos |
@@ -215,14 +215,14 @@ Muchas veces nos vamos a encontrar que en nuestra resolución de problemas con q
 Como muchas veces o en ocasiones nos haremos cargo de simular algunos circuitos lógicos o tablas de verdad podremos ahorrarnos esa tarea operando directamente que en muchas ocasiones estas operaciones las podemos hacer para ejecutar ciclos condicionales, u operaciones a nivel de bit.
 
 ### Para condicionales ###
-| Simbolo | Operación |
+| Símbolo | Operación |
 | ------- | --------- |
 |   &&    | AND condicional |
 |   \|\|  | OR condicinal |
 |   !     | NOT condicional |
 
 ### Para operaciones nivel de bit ###
-| Simbolo | Operación |
+| Símbolo | Operación |
 | ------- | --------- |
 |    &    | AND de dos datos |
 |    |    | OR de dos datos |
