@@ -250,4 +250,198 @@ Como muchas veces o en ocasiones nos haremos cargo de simular algunos circuitos 
     cout<<"((~b2)&0xFF)^0xF0: "<<(((~b2)&0xFF)^0xF0)<<"\n";
     return 0;
   }
+
+  /* Salida
+      División entera (b/c): 0
+      Modulo (b%c): 10
+      Division (a/b): 1.05
+      Multiplicación a*c: 315
+      Suma a+c: 40.5
+
+
+      Operaciones lógicas
+      Valor original b2: 128
+      b2&(b2-1) (Esta operación te puede servir para saber si un número esta en base 2, devolviendo 0 si es un numero 2^{n}): 0
+      b2|(b2-1): 255
+      (~b2)&0xFF: 127
+      ((~b2)&0xFF)^0xF0: 143
+  */
+```
+
+### Otras operaciones y asignación a variables ###
+
+__Suma unitaria__
+
+En los valores enteros puedes hacer que una adición unitaria inmediata la cual puede ser usada antes o después de una evaluación lógica.
+
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int i=10;
+    cout<<"Evaluación de i: "<<i<<"\ni++: "<<i++<<" ,nuevo valor de i: "<<i<<
+    "\n++i: "<<++i<<"\n";
+    return 0;
+  }
+
+  /* Salida
+    Evaluación de i: 10
+    i++: 10 ,nuevo valor de i: 11
+    ++i: 12
+  */
+```
+En conclusión la operación "i++" es una operación la cual primero obtiene el dato, en este caso saca en pantalla y después aumente en 1 unidad, mientras que "++i" primero aumenta 1 unidad y después muestra en pantalla; Para todo caso eso hacen lo mismo en los ciclos
+
+__Resta unitaria__
+
+Al igual que la suma unitaria también nombrada incremento unitario, existe la resta unitaria o decremento unitario.
+
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int i=10;
+    cout<<"Evaluación de i: "<<i<<"\ni--: "<<i--<<" ,nuevo valor de i: "<<i<<
+    "\n--i: "<<--i<<"\n";
+    return 0;
+  }
+
+  /* Salida
+    Evaluación de i: 10
+    i--: 10 ,nuevo valor de i: 9
+    --i: 8
+  */
+```
+__Asignando valores en la misma variable__
+
+Si bien podemos usar 1 y mil variables según la disponibilidad de nuestros recursos del equipo, por otro lado en algunas ocasiones usaremos una misma variable para hacer ciertas operaciones las cuales sustituiremos su valor con el resultado de una operación.
+
+___Caso sin reasignación___
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int a,suma=0;
+    cout<<"Ingresa un valor entero: ";
+    cin>>a;
+    cout<<"Ingresa otro valor entero: ";
+    cin>>suma;
+    cout<<"El valor de la suma es: "<<a+suma<<"\n";
+    return 0;
+  }
+```
+___Caso con reasignación___
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int a,suma=0;
+    cout<<"Ingresa un valor entero: ";
+    cin>>a;
+    cout<<"Ingresa otro valor entero: ";
+    cin>>suma;
+    suma=suma+a;
+    cout<<"El valor de la suma es: "<<suma<<"\n";
+    return 0;
+  }
+```
+
+Para este caso en la reasignación podemos darnos cuenta de que llamamos a la misma variable "suma" para hacer la operación de sustitución de datos, por lo que hay formas de como recortar esta reasignación evitando llamar a la misma variable, de ello podemos hacer lo siguiente:
+| Símbolo | Característica |
+| ------- | -------------- |
+|   +=    | Suma y asignación de un valor |
+|   -=    | Resta y asignación de un valor |
+|   *=    | Multiplicación y asignación de un valor |
+|   /=    | División y asignación de un valor |
+|   %=    | Modulo y asignación de un valor |
+
+Para mostrar mucho acerca de este tipo de operación es necesario dar una introducción a ciclos
+
+# Condicionales #
+Como su nombre lo dice son bloques lógicos en los que se evalúa una expresión, los cuales ejecutaran otro bloque de código o en su defecto puede que salte ese bloque ya que la expresión lógica no es verdadera.
+
+## IF-ELSE ##
+
+Esta es una expresión en la cual se puede evaluar 1 o más condiciones las cuales ejecutaran a continuación una serie de instrucciones u operaciones del programa, a continuación dos ejemplos.
+
+__Ejemplo 1__
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int var;
+    cout<<"Ingresa un valor entero: ";
+    cin>>var;
+    if(var>0){
+      cout<<"Es un valor entero positivo\n";
+    }else{
+      cout<<"Es un valor entero no positivo\n";
+    }
+    return 0;
+  }
+```
+__Ejemplo 2__
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int var;
+    cout<<"Ingresa un valor entero: ";
+    cin>>var;
+    if(var>0){
+      cout<<"Es un valor entero positivo\n";
+    }else if(var<0){
+      cout<<"Es un valor entero negativo\n";
+    }else{
+      cout<<"El valor es cero\n";
+    }
+    return 0;
+  }
+```
+## Switch ##
+Parecido a if-else, switch funciona como un comodín el cual permite evaluar varias opciones posibles en las que puede ser trabajada una variable.
+
+__Ejemplo__
+
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int var,op;
+    cout<<"Ingresa un valor entero: ";
+    cin>>var;
+    cout<<"Ingresa algunas de las siguientes opciones:\n"<<
+    "1. Muestra el valor cuadrático del entero ingresado\n"<<
+    "2. Muestra el doble del entero ingresado\n"<<
+    "3. Muestra la mitad del valor entero ingresado\n";
+    cin>>op;
+    switch (op) {
+      case 1:
+        cout<<"var="<<var<<"\tvar^{2}="<<var*var<<"\n";
+      break;
+      case 2:
+        cout<<"var="<<var<<"\tvar*2="<<var*2<<"\n";
+      break;
+      case 3:
+        cout<<"var="<<var<<"\tvar/2="<<var/2<<"\n";
+      break;
+      default:
+        cout<<"Opcion no encontrada...\n";
+    }
+    return 0;
+  }
 ```
