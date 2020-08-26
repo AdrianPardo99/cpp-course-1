@@ -199,10 +199,10 @@ En este caso antes del mensaje "Ingresa por favor tu nombre: " se añadió la fu
 
 Una recomendación a la hora de programar es saber si en la lectura de datos de tipo serie o cadena de caracteres se realizara con otra función distinta a "cin" y que va en medio de otras peticiones de otro tipo de variables, es decir una lectura de valores enteros, flotantes, o dobles, es recomendable que vaya acompañado de getchar() para que no existan problemas en los cuales una aplicación o programa pueda fallar.
 
-# Operaciones aritméticas y lógicas #
+## Operaciones aritméticas y lógicas ##
 Muchas veces nos vamos a encontrar que en nuestra resolución de problemas con que debemos realizar operaciones matemáticas y lógicas los cuales a continuación se muestran los símbolos y como operan:
 
-## Operación Aritmética ##
+### Operación Aritmética ###
 | Símbolo | Operación |
 | ------- | --------- |
 |    +    | Suma de dos datos |
@@ -211,17 +211,17 @@ Muchas veces nos vamos a encontrar que en nuestra resolución de problemas con q
 |    /    | División de dos datos en caso de que alguno de los datos o ambos datos sean enteros la división es entera |
 |    %    | Modulo de dos datos, este devuelve el residuo de una división entera |
 
-## Operación Lógica ##
+### Operación Lógica ###
 Como muchas veces o en ocasiones nos haremos cargo de simular algunos circuitos lógicos o tablas de verdad podremos ahorrarnos esa tarea operando directamente que en muchas ocasiones estas operaciones las podemos hacer para ejecutar ciclos condicionales, u operaciones a nivel de bit.
 
-### Para condicionales ###
+#### Para condicionales ####
 | Símbolo | Operación |
 | ------- | --------- |
 |   &&    | AND condicional |
 |   \|\|  | OR condicinal |
 |   !     | NOT condicional |
 
-### Para operaciones nivel de bit ###
+#### Para operaciones nivel de bit ####
 | Símbolo | Operación |
 | ------- | --------- |
 |    &    | AND de dos datos |
@@ -229,7 +229,7 @@ Como muchas veces o en ocasiones nos haremos cargo de simular algunos circuitos 
 |    ^    | XOR de dos datos |
 |    ~    | NOT de un dato |
 
-#### Ejemplos ####
+##### Ejemplos #####
 ```cpp
   #include <iostream>
 
@@ -268,7 +268,7 @@ Como muchas veces o en ocasiones nos haremos cargo de simular algunos circuitos 
   */
 ```
 
-### Otras operaciones y asignación a variables ###
+#### Otras operaciones y asignación a variables ####
 
 __Suma unitaria__
 
@@ -365,10 +365,10 @@ Para este caso en la reasignación podemos darnos cuenta de que llamamos a la mi
 
 Para mostrar mucho acerca de este tipo de operación es necesario dar una introducción a ciclos
 
-# Condicionales #
+## Condicionales ##
 Como su nombre lo dice son bloques lógicos en los que se evalúa una expresión, los cuales ejecutaran otro bloque de código o en su defecto puede que salte ese bloque ya que la expresión lógica no es verdadera.
 
-## IF-ELSE ##
+### IF-ELSE ###
 
 Esta es una expresión en la cual se puede evaluar 1 o más condiciones las cuales ejecutaran a continuación una serie de instrucciones u operaciones del programa, a continuación dos ejemplos.
 
@@ -410,7 +410,7 @@ __Ejemplo 2__
     return 0;
   }
 ```
-## Switch ##
+### Switch ###
 Parecido a if-else, switch funciona como un comodín el cual permite evaluar varias opciones posibles en las que puede ser trabajada una variable.
 
 __Ejemplo__
@@ -445,3 +445,6 @@ __Ejemplo__
     return 0;
   }
 ```
+
+## Ciclos ##
+Los ciclos son bloques de código los cuales evalúan una función/expresión lógica, estos bloques permiten ejecutar una secuencia de código de forma repetitiva, por lo que en muchas ocasiones esto puede servir para realizar operaciones como simular sucesiones, series matemáticas y otras cosas sencillas.
