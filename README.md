@@ -447,4 +447,66 @@ __Ejemplo__
 ```
 
 ## Ciclos ##
-Los ciclos son bloques de código los cuales evalúan una función/expresión lógica, estos bloques permiten ejecutar una secuencia de código de forma repetitiva, por lo que en muchas ocasiones esto puede servir para realizar operaciones como simular sucesiones, series matemáticas y otras cosas sencillas.
+Los ciclos son bloques de código los cuales evalúan una función/expresión lógica, estos bloques permiten ejecutar una secuencia de código de forma repetitiva, por lo que en muchas ocasiones esto puede servir para realizar operaciones como simular sucesiones, series matemáticas y otras cosas "sencillas".
+
+### FOR ###
+Este es un ciclo el cual realiza una sucesión de repeticiones llevando un control numérico de cual es el valor inicial, cual es el limite de la sucesión y de cuanto es el incremento, el ejemplo en código originalmente se trabaja con valores enteros, por lo que a continuación se muestra:
+
+__Pseudocódigo__
+```cpp
+  for(valor-Inicial-Asignacion; expresion-Logica-de-limite; incremento-de-la-variable){
+    Codigo relacionado a operar
+  }
+```
+
+__Ejemplo__
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int i;
+    for(i=0;i<10;i++){
+      cout<<"Valor de i: "<<i<<"\n";
+    }
+    return 0;
+  }
+  /* En la salida obtendremos:
+      Valor de i: 0
+      Valor de i: 1
+      Valor de i: 2
+      Valor de i: 3
+      Valor de i: 4
+      Valor de i: 5
+      Valor de i: 6
+      Valor de i: 7
+      Valor de i: 8
+      Valor de i: 9
+    Por lo que podemos ver en la salida i le es asignado el valor de 0 al inicio del ciclo
+      por otro lado inicia la evaluacion de que i sea menos a 10 de tal modo que ahi ingresa
+      en el codigo de salida a pantalla y despues realiza el incremento de la variable i
+  */
+```
+
+Otro ejemplo donde igual podría implicarse el uso del ciclo for es en el calculo de la serie de Fibonacci la cual se realiza con el calculo de un termino con la suma de sus dos términos predecesores, dicha serie comienza (0,1,1,2,3,5,8,13,...)
+
+__Ejemplo serie de Fibonacci__
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int a=0,b=1,i,c;
+    cout<<"Termino[0]\t=\t"<<a<<"\nTermino [1]\t=\t"<<b<<"\n";
+    for(i=0;i<20;i++){
+      cout<<"Termino ["<<i+2<<"]\t=\t"<<a+b<<"\n";
+      /* Intercambio de datos */
+      c=b;
+      b=a+b;
+      a=c;
+    }
+    return 0;
+  }
+```
