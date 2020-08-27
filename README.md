@@ -510,3 +510,19 @@ __Ejemplo serie de Fibonacci__
     return 0;
   }
 ```
+
+### WHILE & DO-WHILE###
+Es un ciclo el cual evalúa una o varias condiciones lógicas las cuales al ser verdaderas el bloque programado en el ciclo es ejecutado hasta que la condición evaluada sea falsa, por otra parte hay dos casos de implementación de este tipo de ciclo en ambos casos trabajan de "igual" forma, pero inicialmente y en palabras sencillas while y do-while se diferencian en:
+
+__While__
+
+Primero evalúa la condición lógica y posteriormente si la condición es verdadera ejecuta el bloque de código.
+
+__Do-While__
+
+En este caso primero ejecuta 1 vez el bloque de código para más tarde evaluar la expresión lógica.
+
+__Gráficamente__
+![meme](./imgs/while.jpg)
+
+Un ejemplo en código podemos hacer lo siguiente:
