@@ -526,3 +526,56 @@ __Gráficamente__
 ![meme](./imgs/while.jpg)
 
 Un ejemplo en código podemos hacer lo siguiente:
+
+
+__Ejemplo While__
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int v;
+    bool o=true;
+    while(o){
+      cout<<"Ingresa un entero positivo: ";
+      cin>>v;
+      if(v>0){
+        cout<<"El valor cuadratico es: "<<v*v<<"\n";
+      }else{
+        cout<<"El valor es negativo\nEl valor cuadratico es: "<<v*v<<"\n";
+        o=false;
+      }
+    }
+    return 0;
+  }
+```
+__Ejemplo Do-While__
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int v;
+    bool o;
+    do{
+      cout<<"Ingresa un entero positivo: ";
+      cin>>v;
+      if(v>0){
+        cout<<"El valor cuadratico es: "<<v*v<<"\n";
+        o=true;
+      }else{
+        cout<<"El valor es negativo\nEl valor cuadratico es: "<<v*v<<"\n";
+        o=false;
+      }
+    } while(o);
+    return 0;
+  }
+  /* Aqui podemos ver que el caso de do-while ignora si esta asignada o no
+      la variable, por lo que en el bloque do-while asignamos el valor
+      pero en caso de no asignar en true el caso que necesitamos
+      en caso de no ser asignada la variable puede que venga con un valor
+      o puede que venga con basura en la region de memoria a la cual se asigno
+   */
+```
