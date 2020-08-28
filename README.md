@@ -579,3 +579,76 @@ __Ejemplo Do-While__
       o puede que venga con basura en la region de memoria a la cual se asigno
    */
 ```
+
+## Array (arreglos) ##
+Los Array son estructuras de datos los cuales almacenan un tipo de dato estricto en el cual se le asigna de forma continua vía indice el cual va desde el indice 0 hasta N-1.
+
+Por otro lado podemos crear arreglos de datos de tamaño N, que de acuerdo al tamaño de cada tipo de variable es decir M bytes podemos decir que en memoria ocupa N*M bytes
+
+Un ejemplo de arreglos estáticos es:
+
+__Forma 1__
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int arr[10],i;
+    arr[0]=0;
+    arr[1]=1;
+    for(i=2;i<10;i++){
+      arr[i]=arr[i-1]+arr[i-2];
+    }
+    cout<<"Serie de Fibonacci: \n";
+    for(i=0;i<10;i++){
+      cout<<arr[i]<<"\n";
+    }
+    return 0;
+  }
+```
+__Forma 1__
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int *arr=new int[10],i;
+    arr[0]=0;
+    arr[1]=1;
+    for(i=2;i<10;i++){
+      arr[i]=arr[i-1]+arr[i-2];
+    }
+    cout<<"Serie de Fibonacci: \n";
+    for(i=0;i<10;i++){
+      cout<<arr[i]<<"\n";
+    }
+    return 0;
+  }
+```
+
+Arreglos dinámicos:
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(void){
+    int i,o;
+    cout<<"Ingresa un numero entero mayor a 2: ";
+    cin>>o;
+    int *arr=new int[o];
+    arr[0]=0;
+    arr[1]=1;
+    for(i=2;i<o;i++){
+      arr[i]=arr[i-1]+arr[i-2];
+    }
+    cout<<"Serie de Fibonacci: \n";
+    for(i=0;i<o;i++){
+      cout<<arr[i]<<"\n";
+    }
+    return 0;
+  }
+
+```
