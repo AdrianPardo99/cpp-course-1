@@ -607,7 +607,7 @@ __Forma 1__
     return 0;
   }
 ```
-__Forma 1__
+__Forma 2__
 ```cpp
   #include <iostream>
 
