@@ -652,3 +652,13 @@ Arreglos dinámicos:
   }
 
 ```
+
+Ahora si bien podemos ver que este es un arreglo, también existen arreglos de N cantidad de dimensiones, loa cuales dependiendo de como se abordan diversas problemáticas puede crearse o acordarse un arreglos de datos que tenga una dimensión N dentro de cada dimensión puede ser del mismo tamaño o de distinto tamaño.
+
+## Métodos / Funciones ##
+
+Así como la existencia de la función principal "int main()" existen otros tipos de funciones que retornan/envían un tipo de dato en particular el cual puede ser operado para si mismo, o en su defecto para ser enviado a nuevas funciones, en algunos casos las funciones son creadas con el fin de obtener un bloque de código el cual puede ser reutilizado en otro momento, o en su defecto se reutiliza en otro archivo de código para el lenguaje.
+
+__Funciones con retorno de datos__
+
+Así como existen las variables "int", "float", "double", "long" estás pueden describir funciones que retornan un valor de si mismos, al igual se puede escribir funciones que retornen arreglos de una sola dimensión o de varias dimensiones
