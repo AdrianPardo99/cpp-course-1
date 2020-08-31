@@ -667,7 +667,7 @@ Algunos ejemplos de como se realizaría este tipo de tareas son las siguientes:
 
 ___Ejemplo de funciones con retorno___
 
-```gcc
+```c
   /* Pasar de un valor entero a un valor double */
   double integerToDouble(int a){
     return (double)a;
