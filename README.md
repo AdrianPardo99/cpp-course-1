@@ -667,34 +667,27 @@ Algunos ejemplos de como se realizaría este tipo de tareas son las siguientes:
 
 ___Ejemplo de funciones con retorno___
 
+Primero la definición de funciones con que valor retorna y que valores entran a la función
+
 ```c
   /* Pasar de un valor entero a un valor double */
-  double integerToDouble(int a){
-    return (double)a;
-  }
+  double integerToDouble(int);
 
   /* Verificar si un valor esta escrito/descrito en base 2 */
-  bool isBaseTwo(int n){
-    return (n&(n-1))==0;
-  }
+  bool isBaseTwo(int);
 
   /* Verifica si es un numero par */
-  bool isPar(int n){
-    return (n%2)==0;
-  }
+  bool isPar(int);
 
   /* Obtiene la mitad de cualquier valor */
-  double divTwo(double d){
-    return d/2;
-  }
+  double divTwo(double);
 
   /* Obtiene la mitad de cualquier valor */
-  int divTwo(int n){
-    return n/2;
-  }
+  int divTwo(int);
 ```
 
 La ventaja con respecto a otros lenguajes es que podemos crear funciones que tengan el mismo nombre pero que a nivel de código realizan distintas operaciones, el ejemplo implementando estas funciones en código son las siguientes:
+
 ```cpp
   #include <iostream>
 
@@ -755,5 +748,26 @@ La ventaja con respecto a otros lenguajes es que podemos crear funciones que ten
   /* Obtiene la mitad de cualquier valor */
   int divTwo(int n){
     return n/2;
+  }
+```
+
+## Propuestas de ejercicios ##
+
+Si bien este es un avance considerable y en algunas ocasiones poco útil si ya eres un programador "Avanzado", este markdown esta hecho para personas que buscan el volver al lenguaje C++ un lenguaje principal para iniciar sus caminos por la programación, aun hay mucho que enseñar y codificar, por ello a continuación muestro algunos ejercicios sencillos para la curva de aprendizaje de C++.
+
+* Creación de un ejercicio de CURP con String o con el arreglo de char, entre ambos hay una equivalencia String=char[]
+* Calculadora sencilla
+* Calculadora validando casos en los que hay problemas a la hora de operar (Recomendación realizar operaciones con la biblioteca cmat para no programar más)
+* Escribir las funciones suma, resta, multiplicación y división, a partir de sumas y restas
+
+__Ejemplo de sumas y restas__
+
+```c
+  int suma(int a,int b){
+    return a+b;
+  }
+
+  int resta(int a,int b){
+    return suma(a,-b);
   }
 ```
