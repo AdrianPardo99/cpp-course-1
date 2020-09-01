@@ -12,6 +12,7 @@ int main(void){
         "\nResta de 2-20= "<<resta(j,i)<<
         "\nMultiplicación 20*2= "<<multiplicacion(i,j)<<
         "\nDivision 20/2= "<<division(i,j)<<
-        "\nDivision 2/20= "<<division(j,i)<<"\n";
+        "\nDivision 2/20= "<<division(j,i)<<
+        "\nPotencia 2^{20}= "<<pot(j,i)<<"\n";
   return 0;
 }

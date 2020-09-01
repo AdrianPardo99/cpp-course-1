@@ -24,3 +24,15 @@ int division(int a,int b){
   }
   return t;
 }
+
+int pot(int a,int b){
+  int t=1,i;
+  if(b==0){
+    return t;
+  }
+  for(i=0;i<b;i=suma(i,1)){
+    t=multiplicacion(t,a);
+  }
+  return t;
+
+}
