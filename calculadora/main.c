@@ -16,6 +16,14 @@ int main(void){
         "\nDivision 2/20= "<<division(j,i)<<
         "\nPotencia 2^{20}= "<<pot(j,i)<<
         "\nPotencia 3^{4}= "<<pot(3,4)<<
+        "\nDivision 20/-2= "<<division(i,-j)<<
+        "\nDivision -20/2= "<<division(-i,j)<<
+        "\nDivision -20/-2= "<<division(-i,-j)<<
+        "\nMultiplicación 20*-2= "<<multiplicacion(i,-j)<<
+        "\nMultiplicación -20*2= "<<multiplicacion(-i,j)<<
+        "\nMultiplicacion -20*-2= "<<multiplicacion(-i,-j)<<
+        "\nPotencia -2^{3}= "<<pot(-j,j+1)<<
+        "\nPotencia -2^{2}= "<<pot(-j,j)<<
         "\n";
   return 0;
 }
