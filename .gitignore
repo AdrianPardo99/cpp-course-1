@@ -1,2 +1,4 @@
 *.out
 *.h.gch
+*.o
+main
